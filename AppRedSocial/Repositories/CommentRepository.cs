@@ -6,30 +6,33 @@ namespace AppRedSocial.Repositories
 {
     public class CommentRepository(AppDbContext _context) : ICommentRepository
     {
-        public async Task<Comment> AddCommentAsycn(Comment comment)
+        public async Task<Comment?> GetByIdAsync(int id)
         {
-            var entry = await _context.Comments.AddAsync(comment);
-            return entry.Entity;
+            return await _context.Comments
+                .Include(c => c.User)
+                .Include(c => c.Post)
+                .FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public Task<bool> DeleteCommentAsycn(Comment comment)
+        public async Task<IEnumerable<Comment>> GetByPostIdAsync(int postId)
         {
-            throw new NotImplementedException();
+            return await _context.Comments
+                .Where(c => c.PostId == postId)
+                .Include(c => c.User)
+                .ToListAsync();
         }
 
-        public async Task<Comment> GetCommentById(int id)
+        public async Task AddAsync(Comment comment)
         {
-            return await _context.Users.FirstOrDefaultAsync(c=>c.CommentId== id);
+            await _context.Comments.AddAsync(comment);
+            await _context.SaveChangesAsync();
         }
 
-        public async Task<Comment> GetCommentByUserAsycn(User user)
+        public async Task DeleteAsync(Comment comment)
         {
-            return await _context.Users.Include(u=> u.Role).FirstOrDefaultAsync(c=>c.UserId = user.Id);
+            _context.Comments.Remove(comment);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<Comment> UpdateCommentAsycn(Comment comment, User user)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

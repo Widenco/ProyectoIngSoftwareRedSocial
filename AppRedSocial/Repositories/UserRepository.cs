@@ -35,5 +35,10 @@ namespace AppRedSocial.Repositories
             return await _context.Users
                 .FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
         }
+
+        public async Task<User?> GetUserById(int id)
+        {
+            return await _context.Users.Include(u => u.Role).FirstOrDefaultAsync(u => u.Id == id);
+        }
     }
 }

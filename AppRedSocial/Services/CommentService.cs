@@ -24,7 +24,7 @@ namespace AppRedSocial.Services
             var user = await _userRepository.GetUserByUserName(userName)
             ?? throw new Exception("El usuario no existe.");
 
-            var post = await _postRepository.GetPostByIdAsync(postId)
+            var post = await _postRepository.GetByIdAsync(postId)
                 ?? throw new Exception("El post no existe.");
 
             if (string.IsNullOrWhiteSpace(content))
@@ -37,14 +37,14 @@ namespace AppRedSocial.Services
                 Content = content,
             };
 
-            await _commentRepository.AddCommentAsycn(comment);
+            await _commentRepository.AddAsync(comment);
 
             return comment;
         }
 
         public async Task<bool> DeleteCommentAsync(int commentId, string userName)
         {
-            var comment = await _commentRepository.GetCommentById(commentId)
+            var comment = await _commentRepository.GetByIdAsync(commentId)
             ?? throw new Exception("Comentario no encontrado.");
 
             if (comment.User.UserName != userName)
@@ -54,13 +54,13 @@ namespace AppRedSocial.Services
                     throw new Exception("No tienes permiso para eliminar este comentario.");
             }
 
-            await _commentRepository.DeleteCommentAsycn(comment);
+            await _commentRepository.DeleteAsync(comment);
             return true;
         }
 
         public async Task<IEnumerable<Comment>> GetCommentsByPostAsync(int postId)
         {
-            return await _commentRepository.GetCommentByPostAsycn(postId);
+            return await _commentRepository.GetByPostIdAsync(postId);
         }
     }
 }

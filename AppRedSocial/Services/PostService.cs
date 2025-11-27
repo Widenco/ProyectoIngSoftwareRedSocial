@@ -27,14 +27,14 @@ namespace AppRedSocial.Services
                 Content = content
             };
 
-            await _postRepository.AddPostAsync(post);
+            await _postRepository.AddAsync(post);
 
             return post;
         }
 
         public async Task<bool> DeletePostAsync(int postId, string userName)
         {
-            var post = await _postRepository.GetPostByIdAsync(postId)
+            var post = await _postRepository.GetByIdAsync(postId)
             ?? throw new Exception("Post no encontrado.");
 
             if (post.User.UserName != userName)
@@ -44,7 +44,7 @@ namespace AppRedSocial.Services
                     throw new Exception("No tienes permiso para eliminar este post.");
             }
 
-            await _postRepository.DeletePostAsync(post);
+            await _postRepository.DeleteAsync(post);
             return true;
         }
 
@@ -55,17 +55,17 @@ namespace AppRedSocial.Services
 
         public async Task<Post?> GetPostByIdAsync(int postId)
         {
-            return await _postRepository.GetPostByIdAsync(postId);
+            return await _postRepository.GetByIdAsync(postId);
         }
 
         public async Task<IEnumerable<Post>> GetPostsByUserAsync(int userId)
         {
-            return await _postRepository.GetPostByUserAsync(userId);
+            return await _postRepository.GetByUserIdAsync(userId);
         }
 
         public async Task<bool> UpdatePostAsync(int postId, string userName, string newContent)
         {
-            var post = await _postRepository.GetPostByIdAsync(postId)
+            var post = await _postRepository.GetByIdAsync(postId)
             ?? throw new Exception("Post no encontrado.");
 
             if (post.User.UserName != userName)
@@ -80,7 +80,7 @@ namespace AppRedSocial.Services
 
             post.Content = newContent;
 
-            await _postRepository.UpdatePostAsync(post);
+            await _postRepository.UpdateAsync(post);
             return true;
         }
     }

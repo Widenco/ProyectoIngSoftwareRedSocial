@@ -4,10 +4,9 @@ namespace AppRedSocial.Repositories
 {
     public interface ICommentRepository
     {
-        Task<Comment> AddCommentAsycn(Comment comment);
-        Task<bool> DeleteCommentAsycn(Comment comment);  
-        Task<Comment> UpdateCommentAsycn(Comment comment, User user);
-        Task<Comment> GetCommentByUserAsycn(User user);
-        Task<Comment> GetCommentById(int id);
+        Task<Comment?> GetByIdAsync(int id);
+        Task<IEnumerable<Comment>> GetByPostIdAsync(int postId);
+        Task AddAsync(Comment comment);
+        Task DeleteAsync(Comment comment);
     }
 }

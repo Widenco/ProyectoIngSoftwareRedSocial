@@ -4,7 +4,7 @@ namespace AppRedSocial.Models
 {
     public class Post
     {
-        public int PostId { get; set; }
+        public int Id { get; set; }
         public int UserId { get; set; }
 
         public string Title { get; set; }

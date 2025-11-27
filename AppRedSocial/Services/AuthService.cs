@@ -1,6 +1,8 @@
-﻿using AppRedSocial.Repositories;
+﻿using AppRedSocial.Models;
+using AppRedSocial.Repositories;
 using AuthenticationApp.DTOS;
 using AutoMapper;
+using System.Security.Cryptography;
 
 namespace AppRedSocial.Services
 {
