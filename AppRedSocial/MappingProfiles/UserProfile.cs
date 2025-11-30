@@ -1,5 +1,5 @@
 ﻿using AppRedSocial.Models;
-using AuthenticationApp.DTOS;
+using AppRedSocial.DTOS;
 using AutoMapper;
 
 namespace AppRedSocial.MappingProfiles

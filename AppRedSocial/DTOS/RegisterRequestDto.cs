@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AuthenticationApp.DTOS
+namespace AppRedSocial.DTOS
 {
     public class RegisterRequestDto
     {

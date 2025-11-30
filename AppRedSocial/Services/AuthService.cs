@@ -1,6 +1,6 @@
 ﻿using AppRedSocial.Models;
 using AppRedSocial.Repositories;
-using AuthenticationApp.DTOS;
+using AppRedSocial.DTOS;
 using AutoMapper;
 using System.Security.Cryptography;
 

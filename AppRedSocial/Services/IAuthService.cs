@@ -1,4 +1,4 @@
-﻿using AuthenticationApp.DTOS;
+﻿using AppRedSocial.DTOS;
 
 namespace AppRedSocial.Services
 {

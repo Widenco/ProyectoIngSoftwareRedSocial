@@ -1,29 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using AppRedSocial.Models;
+﻿using AppRedSocial.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using AppRedSocial.DTOS;
 
 namespace AppRedSocial.Controllers
 {
-    public class AuthController : Controller
+    public class AuthController(IAuthService authService) : Controller
     {
-        // Vista de Login
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
 
-        [HttpPost]
-        public IActionResult Login(LoginViewModel model)
-        {
-            if (!ModelState.IsValid)
-                return View(model);
+        private readonly IAuthService _authService = authService;
 
-            
-            return RedirectToAction("Index", "Home");
-        }
-
-
-        // Vista de REGISTER 
         [HttpGet]
         public IActionResult Register()
         {
@@ -31,45 +17,203 @@ namespace AppRedSocial.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(RegisterViewModel model)
+        public async Task<IActionResult> Register([FromBody] RegisterRequestDto dto)
         {
             if (!ModelState.IsValid)
-                return View(model);
+                return BadRequest("Hubo un error al guardar");
 
-           
+            var (success, error) = await _authService.RegisterAsync(dto);
+            if (!success)
+            {
+                //ModelState.AddModelError("", error ?? "Error al registrar.");
+                return Conflict(new
+                {
+                    Message = error
+                });
+            }
 
-            
+            return Ok(new { success = true });
+
+        }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            var token = Request.Cookies["access_token"];
+            if (!string.IsNullOrEmpty(token))
+            {
+                // Aquí podrías validar el token también si deseas
+                return RedirectToAction("Index", "Home");
+            }
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(new { success = false, errorMessage = "Datos inválidos." });
+
+            var (success, result, error) = await _authService.LoginAsync(dto);
+            if (!success)
+                return Unauthorized(new { success = false, errorMessage = error ?? "Credenciales incorrectas." });
+
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = result.ExpiresAt
+            };
+
+            Response.Cookies.Append("access_token", result.AccessToken, cookieOptions);
+            Response.Cookies.Append("refresh_token", result.RefreshToken, cookieOptions);
+
+            return Ok(new
+            {
+                success = true,
+                message = "Login exitoso"
+            });
+        }
+
+        [Authorize]
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            Response.Cookies.Delete("access_token");
+            Response.Cookies.Delete("refresh_token");
+
+            return Json(new { success = true, message = "Sesión cerrada correctamente" });
+        }
+
+        // ========== CONFIRMACIÓN DE CORREO ==========
+        [HttpGet]
+        public async Task<IActionResult> ConfirmEmail(string email, string token)
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(token))
+                return BadRequest("Parámetros inválidos.");
+
+            var confirmado = await _authService.ConfirmEmailAsync(email, token);
+            if (confirmado)
+            {
+                TempData["Success"] = " ¡Correo confirmado con exito! Ahora puedes iniciar sesion.";
+                return RedirectToAction("Login");
+            }
+
+            TempData["Error"] = "El token es invalido o ya expiro.";
             return RedirectToAction("Login");
         }
 
-
-        // Vista de FORGOT PASSWORD 
+        // ========== RECUPERAR CONTRASEÑA ==========
         [HttpGet]
-        public IActionResult ForgotPassword()
+        public IActionResult ForgotPassword() => View();
+
+        //Primer paso para hacer la recuperacion por olvidar password
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequestDto model)
         {
-            return View();
+            if (model == null || string.IsNullOrWhiteSpace(model.Email))
+            {
+                return BadRequest(new { success = false, errorMessage = "El correo es requerido." });
+            }
+
+            var sent = await _authService.SendResetPasswordLinkAsync(model.Email);
+
+            if (sent)
+            {
+                return Ok(new { success = true });
+            }
+            else
+            {
+                return NotFound(new { success = false, errorMessage = "Correo no encontrado." });
+            }
         }
 
+        // ========== RESET CONTRASEÑA ==========
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult ResetPassword(string email, string token)
+        {
+            var model = new ResetPasswordRequestDto { Email = email, Token = token };
+            return View(model);
+        }
+
+        //Segundo paso para resetear el password
         [HttpPost]
-        public IActionResult ForgotPassword(ForgotPasswordViewModel model)
+        [AllowAnonymous]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordRequestDto dto)
         {
             if (!ModelState.IsValid)
-                return View(model);
+                return View(dto);
 
-           
+            var success = await _authService.ResetPasswordAsync(dto);
+            if (success)
+            {
 
-            TempData["Info"] =
-                "Si existe una cuenta asociada a ese correo, recibirás instrucciones para restablecer la contraseña.";
+                return Ok(new { success = true });
+            }
 
-            return RedirectToAction("ForgotPasswordConfirmation");
+            ModelState.AddModelError("", "Token inválido o expirado.");
+            return View(dto);
         }
 
-
-        // Vista de CONFIRMATION 
+        // ========== CAMBIO DE CONTRASEÑA ==========
+        [Authorize]
         [HttpGet]
-        public IActionResult ForgotPasswordConfirmation()
+        public IActionResult ChangePassword() => View();
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordDto dto)
         {
-            return View();
+            if (!ModelState.IsValid)
+                return View(dto);
+
+            var username = User.Identity?.Name!;
+            var success = await _authService.ChangePasswordAsync(username, dto);
+            if (success)
+            {
+                TempData["Success"] = "Contraseña actualizada correctamente.";
+                return RedirectToAction("Logout");
+            }
+
+            ModelState.AddModelError("", "Contraseña actual incorrecta.");
+            return View(dto);
         }
+        [HttpPost]
+        public async Task<IActionResult> RefreshToken()
+        {
+            var refreshToken = Request.Cookies["refresh_token"];
+            if (string.IsNullOrEmpty(refreshToken))
+                return Unauthorized();
+
+            var newTokens = await _authService.RefreshAccessTokenAsync(refreshToken);
+            if (newTokens == null)
+                return Unauthorized();
+
+            var accessOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = newTokens.ExpiresAt
+            };
+
+            var refreshOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTime.UtcNow.AddDays(7)
+            };
+
+            Response.Cookies.Append("access_token", newTokens.AccessToken, accessOptions);
+            Response.Cookies.Append("refresh_token", newTokens.RefreshToken, refreshOptions);
+
+            return Ok();
+        }
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View("AccessDenied");
+        }
+
     }
 }

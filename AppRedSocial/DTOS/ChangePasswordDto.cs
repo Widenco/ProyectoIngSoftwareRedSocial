@@ -1,4 +1,4 @@
-﻿namespace AuthenticationApp.DTOS
+﻿namespace AppRedSocial.DTOS
 {
     public class ChangePasswordDto
     {
