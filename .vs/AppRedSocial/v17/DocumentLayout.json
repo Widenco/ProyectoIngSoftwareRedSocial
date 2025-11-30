@@ -1,37 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\denzell connolly\\downloads\\proyectoredsocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\appredsocial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\denzell connolly\\downloads\\proyectoredsocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\appredsocial\\mappingprofiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\views\\feed\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\views\\feed\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\views\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\views\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\wwwroot\\js\\reset-password.js||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\wwwroot\\js\\reset-password.js||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\middleware\\jwtrefreshmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\middleware\\jwtrefreshmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\mappingprofiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\mappingprofiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\denzell connolly\\downloads\\proyectoredsocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\appredsocial\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\denzell connolly\\downloads\\proyectoredsocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\appredsocial\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\denzell connolly\\downloads\\proyectoredsocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\appredsocial\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\denzell connolly\\downloads\\proyectoredsocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\appredsocial\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\denzell connolly\\downloads\\proyectoredsocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\appredsocial\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\denzell connolly\\downloads\\proyectoredsocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\appredsocial\\repositories\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|c:\\users\\user\\source\\repos\\proyectoingsoftwareredsocial\\appredsocial\\repositories\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03F96B72-8DF3-49FA-845D-D30050782D49}|AppRedSocial\\AppRedSocial.csproj|solutionrelative:appredsocial\\repositories\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,54 +90,176 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\MappingProfiles\\UserProfile.cs",
-              "RelativeDocumentMoniker": "AppRedSocial\\MappingProfiles\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\MappingProfiles\\UserProfile.cs",
-              "RelativeToolTip": "AppRedSocial\\MappingProfiles\\UserProfile.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T04:20:31.491Z",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "AppRedSocial\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "AppRedSocial\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAqwJAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T17:54:19.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\appsettings.json",
-              "RelativeDocumentMoniker": "AppRedSocial\\appsettings.json",
-              "ToolTip": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\appsettings.json",
-              "RelativeToolTip": "AppRedSocial\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-27T04:02:52.811Z",
-              "EditorCaption": ""
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\User\\Profile.cshtml",
+              "RelativeDocumentMoniker": "AppRedSocial\\Views\\User\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\User\\Profile.cshtml",
+              "RelativeToolTip": "AppRedSocial\\Views\\User\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-29T23:03:16.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppRedSocial\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AppRedSocial\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T18:05:15.127Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "AppRedSocial\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Services\\TokenService.cs",
-              "RelativeToolTip": "AppRedSocial\\Services\\TokenService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCcAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T03:15:38.033Z",
-              "EditorCaption": ""
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\wwwroot\\js\\login.js",
+              "RelativeDocumentMoniker": "AppRedSocial\\wwwroot\\js\\login.js",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\wwwroot\\js\\login.js",
+              "RelativeToolTip": "AppRedSocial\\wwwroot\\js\\login.js",
+              "ViewState": "AgIAALwAAAAAAAAAAAAEwCYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-28T18:37:29.435Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "AppRedSocial\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Controllers\\PostController.cs",
+              "RelativeToolTip": "AppRedSocial\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAswF0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T01:21:20.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Feed\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppRedSocial\\Views\\Feed\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Feed\\Index.cshtml",
+              "RelativeToolTip": "AppRedSocial\\Views\\Feed\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T02:15:05.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "AppRedSocial\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "AppRedSocial\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-29T22:52:40.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\wwwroot\\css\\index.css",
+              "RelativeDocumentMoniker": "AppRedSocial\\wwwroot\\css\\index.css",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\wwwroot\\css\\index.css",
+              "RelativeToolTip": "AppRedSocial\\wwwroot\\css\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-29T22:41:33.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Post\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AppRedSocial\\Views\\Post\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Post\\Edit.cshtml",
+              "RelativeToolTip": "AppRedSocial\\Views\\Post\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T01:06:37.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbcontext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Data\\AppDbcontext.cs",
+              "RelativeDocumentMoniker": "AppRedSocial\\Data\\AppDbcontext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Data\\AppDbcontext.cs",
+              "RelativeToolTip": "AppRedSocial\\Data\\AppDbcontext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:03:10.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "AppRedSocial\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "AppRedSocial\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAMgAAAAANG4ZtwwlwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T22:32:32.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "reset-password.js",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\wwwroot\\js\\reset-password.js",
+              "RelativeDocumentMoniker": "AppRedSocial\\wwwroot\\js\\reset-password.js",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\wwwroot\\js\\reset-password.js",
+              "RelativeToolTip": "AppRedSocial\\wwwroot\\js\\reset-password.js",
+              "ViewState": "AgIAACcAAAAAAAAAAAAEwEUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-29T22:05:59.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AppRedSocial\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AppRedSocial\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T18:47:13.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "PostService.cs",
-              "DocumentMoniker": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Services\\PostService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Services\\PostService.cs",
               "RelativeDocumentMoniker": "AppRedSocial\\Services\\PostService.cs",
-              "ToolTip": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Services\\PostService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Services\\PostService.cs",
               "RelativeToolTip": "AppRedSocial\\Services\\PostService.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAuwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,11 +267,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Services\\EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "AppRedSocial\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Services\\EmailService.cs",
               "RelativeToolTip": "AppRedSocial\\Services\\EmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -109,11 +279,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Services\\AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "AppRedSocial\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Services\\AuthService.cs",
               "RelativeToolTip": "AppRedSocial\\Services\\AuthService.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAowE4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -121,24 +291,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Program.cs",
-              "RelativeDocumentMoniker": "AppRedSocial\\Program.cs",
-              "ToolTip": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Program.cs",
-              "RelativeToolTip": "AppRedSocial\\Program.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "JwtRefreshMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Middleware\\JwtRefreshMiddleware.cs",
+              "RelativeDocumentMoniker": "AppRedSocial\\Middleware\\JwtRefreshMiddleware.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Middleware\\JwtRefreshMiddleware.cs",
+              "RelativeToolTip": "AppRedSocial\\Middleware\\JwtRefreshMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T02:54:14.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T17:49:22.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "AppRedSocial\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Services\\TokenService.cs",
+              "RelativeToolTip": "AppRedSocial\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T03:15:38.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\MappingProfiles\\UserProfile.cs",
+              "RelativeDocumentMoniker": "AppRedSocial\\MappingProfiles\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\MappingProfiles\\UserProfile.cs",
+              "RelativeToolTip": "AppRedSocial\\MappingProfiles\\UserProfile.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T04:20:31.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "ICommentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Repositories\\ICommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Repositories\\ICommentRepository.cs",
               "RelativeDocumentMoniker": "AppRedSocial\\Repositories\\ICommentRepository.cs",
-              "ToolTip": "C:\\Users\\Denzell Connolly\\Downloads\\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\\AppRedSocial\\Repositories\\ICommentRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\Repositories\\ICommentRepository.cs",
               "RelativeToolTip": "AppRedSocial\\Repositories\\ICommentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

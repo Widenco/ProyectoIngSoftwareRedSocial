@@ -17,57 +17,93 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppRedSocial
 build_property.RootNamespace = AppRedSocial
-build_property.ProjectDir = C:\Users\Denzell Connolly\Downloads\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\AppRedSocial\
+build_property.ProjectDir = C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Denzell Connolly\Downloads\ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b\AppRedSocial
+build_property.MSBuildProjectDirectory = C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Auth/ForgotPassword.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Auth/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Auth/ForgotPasswordConfirmation.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Auth/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Auth/Login.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Auth/Register.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Home/Index.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Comment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Feed/Feed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZFxGZWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Feed/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Home/Privacy.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Home/NotFoundPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Shared/Error.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Post/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Post/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Post/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/_ViewImports.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/User/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/_ViewStart.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denzell Connolly/Downloads/ProyectoRedSocial-3c32588faedb57931f7e8a3d64693a50d2b8877b/AppRedSocial/Views/Shared/_Layout.cshtml]
+[C:/Users/User/Source/Repos/ProyectoIngSoftwareRedSocial/AppRedSocial/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-znoalorcm9

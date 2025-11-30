@@ -1,52 +1,144 @@
-﻿@model AppRedSocial.Models.LoginViewModel
-@{
-    ViewData["Title"] = "Iniciar Sesión";
+﻿@{
+    Layout = null;
 }
 
-<div class="row justify-content-center mt-5">
-    <div class="col-md-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaIN - Authentication</title>
+    <link href="~/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="overlay">
+        <div class="popup-container">
+            <main>
+                <div class="form-container">
 
-        <div class="card shadow-sm p-4">
-            <h2 class="text-center mb-4">Iniciar Sesión</h2>
+                    <!-- LOGIN -->
+                    <div id="loginForm" class="form active">
+                        <h1>Welcome Back</h1>
+                        <p class="subtitle">Sign in to continue to your account</p>
 
-            <form asp-action="Login" asp-controller="Auth" method="post">
+                        <form id="signupForm">
+                            <div class="input-group">
+                                <img src="https://api.iconify.design/mdi:email-outline.svg" class="input-icon">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
 
-                <!-- Email -->
-                <div class="form-group mb-3">
-                    <label asp-for="Email" class="form-label"></label>
-                    <input asp-for="Email" class="form-control" autocomplete="email" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
+                            <div class="input-group">
+                                <img src="https://api.iconify.design/mdi:lock-outline.svg" class="input-icon">
+                                <input type="password" id="password" placeholder="Your Password" required>
+                            </div>
+
+                            <div class="remember-forgot">
+                                <label class="remember">
+                                    <input type="checkbox" id="remember">
+                                    <span>Remember me</span>
+                                </label>
+                                <a href="#" class="forgot-link" data-form="forgotForm">Forgot Password?</a>
+                            </div>
+
+                            <button type="submit" class="signup-btn">Sign In</button>
+
+                            <p class="login-link">
+                                Don't have an account? <a href="#" class="switch-form" data-form="registerForm">Sign Up</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- REGISTER -->
+                    <div id="registerForm" class="form">
+                        <h1>Create Account</h1>
+                        <p class="subtitle">Sign up to get started</p>
+
+                        <form id="registerFormElement">
+                            <div class="input-group">
+                                <img src="https://api.iconify.design/mdi:account-outline.svg" class="input-icon">
+                                <input type="text" id="UserName" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="input-group">
+                                <img src="https://api.iconify.design/mdi:email-outline.svg" class="input-icon">
+                                <input type="email" id="registerEmail" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="input-group">
+                                <img src="https://api.iconify.design/mdi:lock-outline.svg" class="input-icon">
+                                <input type="password" id="registerPassword" placeholder="Create Password" required>
+                            </div>
+
+                            <div class="input-group">
+                                <img src="https://api.iconify.design/mdi:lock-check-outline.svg" class="input-icon">
+                                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                            </div>
+
+                            <button type="submit" class="signup-btn">Create Account</button>
+
+                            <p class="login-link">
+                                Already have an account? <a href="#" class="switch-form" data-form="loginForm">Sign In</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- FORGOT -->
+                    <div id="forgotForm" class="form">
+                        <h1>Reset Password</h1>
+                        <p class="subtitle">Enter your email to reset your password</p>
+
+                        <form id="resetPasswordForm">
+                            <div class="input-group">
+                                <img src="https://api.iconify.design/mdi:email-outline.svg" class="input-icon">
+                                <input type="email" id="resetEmail" placeholder="Your Email" required>
+                            </div>
+
+                            <button type="submit" class="signup-btn">Send Reset Link</button>
+
+                            <p class="login-link">
+                                Remember your password? <a href="#" class="switch-form" data-form="loginForm">Sign In</a>
+                            </p>
+                        </form>
+                    </div>
+
                 </div>
-
-                <!-- Password -->
-                <div class="form-group mb-3">
-                    <label asp-for="Password" class="form-label"></label>
-                    <input asp-for="Password" type="password" class="form-control" autocomplete="current-password" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-
-                <!-- Remember Me -->
-                <div class="form-check mb-3">
-                    <input asp-for="RememberMe" class="form-check-input" />
-                    <label asp-for="RememberMe" class="form-check-label"></label>
-                </div>
-
-                <button type="submit" class="btn btn-primary w-100">Ingresar</button>
-
-                <div class="text-center mt-3">
-                    <a asp-action="ForgotPassword" asp-controller="Auth">¿Olvidaste tu contraseña?</a>
-                </div>
-
-                <div class="text-center mt-2">
-                    <a asp-action="Register" asp-controller="Auth">Crear una cuenta nueva</a>
-                </div>
-
-            </form>
+            </main>
         </div>
-
     </div>
-</div>
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/just-validate@4.2.0/dist/just-validate.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (TempData["Success"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: '¡Éxito!',
+                text: '@TempData["Success"]',
+                toast: true,
+                position: 'top-end',
+                timer: 3000,
+                showConfirmButton: false
+            });
+        </script>
+    }
+    else if (TempData["Error"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: '@TempData["Error"]',
+                toast: true,
+                position: 'top-end',
+                timer: 4000,
+                showConfirmButton: false
+            });
+        </script>
+    }
+
+    <script src="~/js/login.js"></script>
+</body>
+</html>

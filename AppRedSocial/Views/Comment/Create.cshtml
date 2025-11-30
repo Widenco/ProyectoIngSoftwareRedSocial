@@ -1,0 +1,34 @@
+﻿@model AppRedSocial.Models.Comment
+
+@{
+    ViewData["Title"] = "Agregar comentario";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            Agregar un comentario
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Create" method="post">
+
+                <input type="hidden" asp-for="PostId" />
+
+                <div class="mb-3">
+                    <label class="form-label">Comentario</label>
+                    <textarea asp-for="Content" class="form-control" rows="4" placeholder="Escribe tu comentario..."></textarea>
+                    <span asp-validation-for="Content" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-success">Comentar</button>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Cancelar</a>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+

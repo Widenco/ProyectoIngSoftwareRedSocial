@@ -1,0 +1,70 @@
+﻿@model List<AppRedSocial.Models.Post>
+
+@{
+    ViewData["Title"] = "Feed";
+}
+
+<h2 class="mb-4">Feed</h2>
+
+<!-- Crear nuevo post -->
+<div class="mb-4">
+    <a class="btn btn-primary" href="/Post/Create">Crear nuevo post</a>
+</div>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay publicaciones aún.</p>
+}
+else
+{
+    foreach (var post in Model)
+    {
+        <div class="card mb-4">
+            <div class="card-body">
+
+                <!-- Título -->
+                <h4>@post.Title</h4>
+
+                <!-- Autor -->
+                <small class="text-muted">
+                    Publicado por: <strong>@post.User.UserName</strong>
+                </small>
+
+                <hr />
+
+                <!-- Contenido -->
+                <p>@post.Content</p>
+
+                <!-- Botones de acción -->
+                <a href="/Post/Details/@post.Id" class="btn btn-outline-primary btn-sm">Ver</a>
+                <a href="/Post/Edit/@post.Id" class="btn btn-outline-warning btn-sm">Editar</a>
+                <a href="/Post/Delete/@post.Id" class="btn btn-outline-danger btn-sm">Eliminar</a>
+
+                <hr />
+
+                <!-- Comentarios -->
+                <h6>Comentarios (@post.Comments.Count)</h6>
+
+                <ul class="list-group mb-3">
+                    @foreach (var c in post.Comments)
+                    {
+                        <li class="list-group-item">
+                            <strong>@c.User.UserName:</strong> @c.Content
+                        </li>
+                    }
+                </ul>
+
+                <!-- Agregar comentario -->
+                <form method="post" action="/Comment/Create">
+                    <input type="hidden" name="PostId" value="@post.Id" />
+
+                    <div class="input-group">
+                        <input type="text" name="Content" class="form-control" placeholder="Escribe un comentario..." required />
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    }
+}

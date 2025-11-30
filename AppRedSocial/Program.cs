@@ -1,5 +1,6 @@
 using AppRedSocial.Data;
 using AppRedSocial.MappingProfiles;
+using AppRedSocial.Middleware;
 using AppRedSocial.Models.Settings;
 using AppRedSocial.Repositories;
 using AppRedSocial.Services;
@@ -13,6 +14,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+
+builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("Smtp"));
+
 //Auto Mapper
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(UserProfile).Assembly));
 
@@ -20,6 +26,11 @@ builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(UserProfile).Assembly))
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("LoginDatabase")));
 
+builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+builder.Services.AddScoped<IPostRepository, PostRepository>();
+
+builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -34,8 +45,6 @@ builder.Services.AddSession(options =>
 });
 
 builder.Services.AddHttpContextAccessor();
-
-
 
 builder.Services.AddAuthentication(options =>
 {
@@ -79,7 +88,17 @@ builder.Services.AddAuthentication(options =>
         }
     };
 
-
+    var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtSettings?.Issuer,
+        ValidAudience = jwtSettings?.Audience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings?.Key!))
+    };
 });
 
 
@@ -95,16 +114,55 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseRouting();
+app.UseStatusCodePages(async context =>
+{
+    var response = context.HttpContext.Response;
 
+    if (response.StatusCode == 404 && !response.HasStarted)
+    {
+        response.Redirect("/Home/NotFoundPage");
+    }
+    if (response.StatusCode == 403 && !response.HasStarted)
+    {
+        response.Redirect("/Auth/AccessDenied");
+    }
+    if (response.StatusCode == 401 && !response.HasStarted)
+    {
+        response.Redirect("/Auth/Login");
+    }
+
+    await Task.CompletedTask;
+});
+
+app.UseRouting();
+app.UseSession();
+app.UseMiddleware<JwtRefreshMiddleware>();
+
+app.UseAuthentication();
 app.UseAuthorization();
+
+// Middleware para manejar redirecciones de autenticación
+app.Use(async (context, next) =>
+{
+     await next();
+
+    // Manejar redirección para no autenticados (401)
+    if (context.Response.StatusCode == 401 && !context.Response.HasStarted)
+    {
+        Console.WriteLine("Redireccionando a login...");
+        context.Response.Redirect($"/Auth/Login?returnUrl={context.Request.Path}");
+    }
+    // Manejar acceso denegado (403)
+    else if (context.Response.StatusCode == 403 && !context.Response.HasStarted)
+    {
+        context.Response.Redirect("/Auth/AccessDenied");
+    }
+});
 
 app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Auth}/{action=Login}/{id?}");
 
 app.Run();
