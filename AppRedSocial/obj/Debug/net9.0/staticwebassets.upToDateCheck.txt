@@ -1,5 +1,9 @@
+wwwroot\css\index.css
+wwwroot\css\login.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\login.js
+wwwroot\js\reset-password.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -61,10 +65,6 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\index.css
-wwwroot\js\reset-password.js
-wwwroot\js\login.js
-wwwroot\css\login.css
 C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\wwwroot\lib\jquery\dist\jquery.slim.min.js

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rDlGHyaK4qQ=",
+  "dgSpecHash": "Img3kt6NNbE=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Source\\Repos\\ProyectoIngSoftwareRedSocial\\AppRedSocial\\AppRedSocial.csproj",
   "expectedPackageFiles": [
@@ -115,6 +115,7 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\9.0.0\\microsoft.visualstudio.web.codegeneration.utils.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\9.0.0\\microsoft.visualstudio.web.codegenerators.mvc.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\nuget.common\\6.11.0\\nuget.common.6.11.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\nuget.configuration\\6.11.0\\nuget.configuration.6.11.0.nupkg.sha512",
@@ -125,6 +126,7 @@
     "C:\\Users\\User\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",

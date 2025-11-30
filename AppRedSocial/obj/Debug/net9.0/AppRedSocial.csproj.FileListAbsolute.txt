@@ -684,3 +684,5 @@ C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\obj\Debug\n
 C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\obj\Debug\net9.0\compressed\g8cdez36hg-vxlx4kae0y.gz
 C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\obj\Debug\net9.0\compressed\9f77smdm26-blfzb9rqjz.gz
 C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\obj\Debug\net9.0\compressed\dbkivuwm1l-tycuvdb8li.gz
+C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\User\Source\Repos\ProyectoIngSoftwareRedSocial\AppRedSocial\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
